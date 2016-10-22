@@ -19,7 +19,7 @@ namespace LongestIncreasingSubsequence
                 len[current] = 1;
                 previous[current] = -1;
 
-                for (int prev = 0; prev < current; prev++)
+                for (int prev = 0; prev <= current; prev++)
                 {
                     if (nums[current] > nums[prev] && len[prev] + 1 > len[current])
                     {
